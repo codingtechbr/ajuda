@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serviços Digitais — Convites, Sites e Sistemas</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071025 0%, #0b1220 100%);color:#e6eef6;line-height:1.45}
+    .wrap{max-width:980px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+
+    .hero{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:22px;border-radius:14px;margin-top:18px;box-shadow:0 6px 18px rgba(3,7,18,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid var(--glass)}
+
+    ul.services{list-style:none;padding:0;margin:12px 0 0 0;display:grid;gap:10px}
+    li.svc{display:flex;gap:12px;align-items:flex-start}
+    .chip{min-width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#032c37,#063042);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h3{margin:0;font-size:16px}
+    small{color:var(--muted)}
+
+    .steps{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .num{background:rgba(255,255,255,0.03);width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    .cta{margin-top:14px;display:flex;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#032634}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr} .logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">FM</div>
+        <div>
+          <h1>Soluções Digitais — Convites, Sites e Sistemas</h1>
+          <p class="lead">Transformando ideias em experiências digitais que realmente funcionam.</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <small>Contato: <strong>contato@exemplo.com</strong></small>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div style="display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap">
+        <div style="flex:1">
+          <h2 style="margin:0 0 8px 0">O que fazemos</h2>
+          <p style="margin:0;color:var(--muted)">Desenvolvemos soluções digitais completas e personalizadas, indo desde convites digitais criativos até sistemas empresariais robustos. Nosso foco é entender a real necessidade do cliente e entregar um produto funcional, bonito e intuitivo.</p>
+
+          <ul class="services">
+            <li class="svc card"><div class="chip">1</div><div><h3>Convites Digitais</h3><small>Perfeitos para casamentos, aniversários, eventos corporativos e festas em geral. Inclui RSVP, mapa, contagem regressiva e links personalizados.</small></div></li>
+            <li class="svc card"><div class="chip">2</div><div><h3>Sites Institucionais e Portfólios</h3><small>Criação de sites profissionais com identidade visual marcante, páginas rápidas e conteúdo otimizado para o Google.</small></div></li>
+            <li class="svc card"><div class="chip">3</div><div><h3>Lojas Virtuais (E‑commerce)</h3><small>Montamos e‑commerce completos com controle de estoque, relatórios, formas de pagamento e integração com WhatsApp e redes sociais.</small></div></li>
+            <li class="svc card"><div class="chip">4</div><div><h3>Sistemas e Dashboards</h3><small>Desenvolvemos sistemas de gestão financeira, controle de clientes, relatórios automáticos e ferramentas sob medida para o seu negócio.</small></div></li>
+            <li class="svc card"><div class="chip">5</div><div><h3>CRM e Gerenciamento de Clientes</h3><small>Organize leads, acompanhe negociações e tenha relatórios claros sobre o desempenho da equipe e o crescimento do negócio.</small></div></li>
+          </ul>
+
+          <div class="cta">
+            <button class="btn btn-primary" onclick="showDemo()">Ver Resumo</button>
+            <button class="btn btn-ghost" onclick="downloadHTML()">Baixar Página</button>
+          </div>
+        </div>
+
+        <aside style="width:320px">
+          <div class="card">
+            <h3 style="margin-bottom:6px">Como funciona o processo</h3>
+            <div class="steps">
+              <div class="step"><div class="num">1</div><div><strong>Planejamento</strong><div><small>Entendemos o objetivo do projeto, o público-alvo e as funcionalidades desejadas.</small></div></div></div>
+              <div class="step"><div class="num">2</div><div><strong>Design</strong><div><small>Apresentamos o layout visual e as telas principais para aprovação antes do desenvolvimento.</small></div></div></div>
+              <div class="step"><div class="num">3</div><div><strong>Desenvolvimento</strong><div><small>Programamos o site ou sistema usando tecnologias modernas, com foco em desempenho e segurança.</small></div></div></div>
+              <div class="step"><div class="num">4</div><div><strong>Testes e Publicação</strong><div><small>Validamos a navegação, compatibilidade e corrigimos qualquer detalhe antes da entrega final.</small></div></div></div>
+              <div class="step"><div class="num">5</div><div><strong>Suporte Contínuo</strong><div><small>Após a entrega, oferecemos suporte técnico, atualizações e melhorias quando necessário.</small></div></div></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="card">
+        <h3>O que eu preciso de você</h3>
+        <ul style="margin:8px 0 0 18px;color:var(--muted)">
+          <li>Objetivo claro do projeto (ex: vender, apresentar, automatizar)</li>
+          <li>Lista de funcionalidades ou recursos desejados</li>
+          <li>Referências visuais — 2 a 3 exemplos de sites ou sistemas que você gosta</li>
+          <li>Prazo e qualquer preferência de estilo ou cores</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Entregáveis</h3>
+        <p style="margin:6px 0;color:var(--muted)">Entrega completa com design em Figma (opcional), código funcional, manual de uso e 30 dias de suporte técnico gratuito.</p>
+      </div>
+    </section>
+
+    <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+      <div class="card" style="flex:1">
+        <h3>Garantias</h3>
+        <p style="margin:6px 0;color:var(--muted)">Todos os projetos são otimizados para dispositivos móveis, contam com SEO básico, segurança HTTPS e são testados nos principais navegadores. Também garantimos a entrega dentro do prazo combinado.</p>
+      </div>
+      <div class="card" style="width:260px">
+        <h3>Próximo passo</h3>
+        <p style="margin:6px 0;color:var(--muted)">Envie seu briefing ou agende uma conversa para definirmos juntos a melhor estratégia digital para o seu projeto.</p>
+      </div>
+    </div>
+
+    <footer>
+      <small>Feito com carinho por Fly Mídia — Transformando ideias em produto. | <span id="ver"></span></small>
+    </footer>
+  </div>
+
+  <script>
+    function showDemo(){
+      alert('Resumo:\n\n- Convites, sites, e sistemas personalizados.\n- Processo: Planejamento > Design > Desenvolvimento > Testes > Suporte.');
+    }
+    function downloadHTML(){
+      const blob = new Blob([document.documentElement.outerHTML],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'apresentacao_projeto.html';
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+    document.getElementById('ver').textContent = new Date().toLocaleDateString('pt-BR');
+  </script>
+</body>
+</html>
